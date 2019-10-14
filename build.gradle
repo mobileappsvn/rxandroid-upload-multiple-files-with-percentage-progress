@@ -1,0 +1,37 @@
+buildscript {
+    ext.kotlin_version = '1.3.50'
+    ext.android_gradle_version = '3.5.0'
+
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$android_gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+project.ext {
+
+    global_minSdkVersion = 19
+    global_targetSdkVersion = 28
+    global_compileSdkVersion = 28
+    global_buildToolsVersion = "28.0.3"
+    global_androidSupportVersion = "28.0.0"
+
+    global_okhttpVersion = "3.8.1"
+
+}

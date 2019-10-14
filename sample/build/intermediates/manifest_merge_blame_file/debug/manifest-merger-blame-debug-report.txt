@@ -1,0 +1,68 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.robert.progress.sample.kotlin"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:6:5-66
+11-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:7:5-80
+12-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:8:5-79
+13-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:8:22-77
+14
+15    <application
+15-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:10:5-26:19
+16        android:allowBackup="true"
+16-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:11:9-35
+17        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+17-->[com.android.support:support-compat:28.0.0] /Users/roberthoang/.gradle/caches/transforms-2/files-2.1/e1567367eeb68d692b5d7c70f20e9333/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:12:9-43
+20        android:label="@string/app_name"
+20-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:13:9-41
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme"
+22-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:14:9-40
+23        android:usesCleartextTraffic="true" >
+23-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:15:9-44
+24        <activity
+24-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:17:9-25:20
+25            android:name="com.robert.progress.sample.kotlin.MainActivity"
+25-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:18:13-74
+26            android:label="@string/app_name" >
+26-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:19:13-45
+27            <intent-filter>
+27-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:20:13-24:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:21:17-68
+28-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:21:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:23:17-76
+30-->/Volumes/Data/Projects/AndroidDemo/UploadMultipleWithPercentProgress/sample/src/main/AndroidManifest.xml:23:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->[pub.devrel:easypermissions:2.0.1] /Users/roberthoang/.gradle/caches/transforms-2/files-2.1/0babf662611a40c827db7903e70c1161/easypermissions-2.0.1/AndroidManifest.xml:12:9-16:66
+34            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+34-->[pub.devrel:easypermissions:2.0.1] /Users/roberthoang/.gradle/caches/transforms-2/files-2.1/0babf662611a40c827db7903e70c1161/easypermissions-2.0.1/AndroidManifest.xml:13:13-86
+35            android:exported="false"
+35-->[pub.devrel:easypermissions:2.0.1] /Users/roberthoang/.gradle/caches/transforms-2/files-2.1/0babf662611a40c827db7903e70c1161/easypermissions-2.0.1/AndroidManifest.xml:14:13-37
+36            android:label=""
+36-->[pub.devrel:easypermissions:2.0.1] /Users/roberthoang/.gradle/caches/transforms-2/files-2.1/0babf662611a40c827db7903e70c1161/easypermissions-2.0.1/AndroidManifest.xml:15:13-29
+37            android:theme="@style/EasyPermissions.Transparent" />
+37-->[pub.devrel:easypermissions:2.0.1] /Users/roberthoang/.gradle/caches/transforms-2/files-2.1/0babf662611a40c827db7903e70c1161/easypermissions-2.0.1/AndroidManifest.xml:16:13-63
+38    </application>
+39
+40</manifest>
