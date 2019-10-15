@@ -2,6 +2,7 @@ package com.robert.progress.sample.kotlin
 
 import android.Manifest
 import android.content.Intent
+import android.database.Cursor
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -59,7 +60,8 @@ class MainActivity: AppCompatActivity(), EasyPermissions.PermissionCallbacks {
             bodyBuilder.addFormDataPart("file[]", file.name, RequestBody.create(MediaType.parse("multipart/form-data"), file))
         }
 
-        bodyBuilder.addFormDataPart("user_name", "Robert")
+        bodyBuilder.addFormDataPart("username", "Robert")
+        bodyBuilder.addFormDataPart("password", "123456!")
         bodyBuilder.addFormDataPart("email", "mobile.apps.pro.vn@gmail.com")
 
         val build = bodyBuilder.build()
@@ -164,13 +166,16 @@ class MainActivity: AppCompatActivity(), EasyPermissions.PermissionCallbacks {
     }
 
     private fun getRealPathFromURIPath(contentURI: Uri): String? {
-        val cursor = contentResolver.query(contentURI, null, null, null, null)
-        if (cursor == null) {
-            return contentURI.path
-        } else {
+        var cursor: Cursor? = null
+        try {
+            cursor = contentResolver.query(contentURI, null, null, null, null)
+            if (cursor == null) {
+                return contentURI.path
+            }
             cursor.moveToFirst()
-            val idx = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA)
-            return cursor.getString(idx)
+            return cursor.getString(cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA))
+        } finally {
+            cursor?.close()
         }
     }
 
