@@ -1,5 +1,5 @@
 # RxAndroid-upload-multiple-files-with-percentage-progress
-Upload multipart files with percentage progress for android using php/java server - rxjava - rxandroid
+Upload multipart files with percentage progress for android using php/java server - kotlin - rxandroid
 
 Refer to Java server via https://github.com/mobileappsvn/upload-multifile-server
 ===================================
